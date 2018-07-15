@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>{GameTitle}</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="author" content="Sacred Seed Studio">
+
+  <meta name="description" contnet="">
+
+  <meta property="og:title" content="{GameTitle}">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="https://www.game.com">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="{GameTitle} game">
+
+  <meta name="theme-color" content="#66a6ff">
+
+  <style>
+    html {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      width: 100%;
+
+      color: #444444;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.15rem;
+
+      background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin: 1rem;
+      padding: 0.5rem;
+      position: relative;
+
+      background: rgba(128, 128, 128, 0.5);
+
+      border-radius: 0.5rem;
+    }
+
+    a {
+      color: rgb(50, 255, 163);
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Semantic */
+
+    header {
+      text-align: center;
+      width: 100%;
+    }
+
+    #storelinks img {
+      width: 75%;
+    }
+
+    #storelinks img.padded {
+      padding: 1rem;
+    }
+
+    section {
+      padding: 0.5rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0 0 0;
+    }
+
+    figure {
+      padding: 0.5rem 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    /* Identified */
+
+    #trailer {
+      text-align: center;
+    }
+
+    #trailer iframe {
+      width: 100%;
+      height: auto;
+    }
+
+    #storelinks {
+      text-align: center;
+    }
+
+    #socialshare {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    #socialshare>div h4 {
+      margin: 0;
+    }
+
+    #socialshare>div a svg {
+      width: 48px;
+      height: 48px;
+    }
+
+    #socialshare>div a .google,
+    #socialshare>div a .reddit {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      background-color: #DC4E41;
+    }
+
+    #socialshare>div a .google svg,
+    #socialshare>div a .reddit svg {
+      width: 24px;
+    }
+
+    #socialshare>div a .reddit {
+      background-color: #EF7E00;
+    }
+
+    /* Responsive */
+
+    @media only screen and (min-width: 400px) {
+      #trailer iframe {
+        min-height: 11rem;
+      }
+    }
+
+    @media only screen and (min-width: 600px) {
+      html {
+        font-size: 1.25rem;
+      }
+      #storelinks img {
+        width: 30%;
+      }
+      #storelinks img.padded {
+        padding: 0.5rem;
+      }
+      #trailer iframe {
+        min-height: 15rem;
+        width: 95%;
+      }
+    }
+
+    @media only screen and (min-width: 750px) {
+      html {
+        font-size: 1.4rem;
+      }
+      #storelinks img {
+        width: 24%;
+      }
+      #trailer iframe {
+        min-height: 18rem;
+      }
+    }
+
+    @media only screen and (min-width: 1000px) {
+      body {
+        padding: 0.5rem 1rem;
+        margin: 1rem 3rem;
+      }
+      #trailer iframe {
+        width: 80%;
+      }
+      #socialshare>div a svg {
+        width: 64px;
+        height: 64px;
+      }
+      #socialshare>div a .google,
+      #socialshare>div a .reddit {
+        width: 64px;
+        height: 64px;
+      }
+      #socialshare>div a .google svg,
+      #socialshare>div a .reddit svg {
+        width: 32px;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      body {
+        margin: 1rem 6rem;
+      }
+      #storelinks img {
+        width: 20%;
+      }
+      #trailer iframe {
+        min-height: 25rem;
+      }
+    }
+
+    @media only screen and (min-width: 1600px) {
+      #storelinks img {
+        width: 15%;
+      }
+      #trailer iframe {
+        min-height: 40rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>{GameTitle}</h1>
+  </header>
+
+  <section id="trailer">
+    <iframe src="https://www.youtube.com/embed/GbuJURjHm9M?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"
+      allowfullscreen></iframe>
+  </section>
+
+  <section id="description">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis augue felis, ut pharetra mi tempus eget. Fusce porta, eros at blandit faucibus, nisi elit tincidunt odio, et pellentesque eros nibh ac nunc. Aliquam hendrerit, dui eget sollicitudin gravida, libero justo venenatis magna, feugiat vulputate ante ligula nec sapien. Nulla at nisl commodo, euismod nulla eu, suscipit augue. Praesent eget elementum odio. Ut vel suscipit mi, nec commodo nulla. Suspendisse accumsan pretium sem, nec laoreet urna tempus ac. Suspendisse dui odio, malesuada a finibus sed, rhoncus non magna. Vestibulum in felis tellus. Suspendisse dignissim erat erat, at congue arcu pharetra vitae.</p>
+  </section>
+
+  <section id="screenshots">
+    <figure>
+      <img src="http://via.placeholder.com/1280x720" alt="{GameTitle} Screenshot">
+      <figcaption>Some caption here!</figcaption>
+    </figure>
+
+    <figure>
+      <img src="http://via.placeholder.com/1280x720" alt="{GameTitle} Screenshot">
+      <figcaption>Some other descriptive caption</figcaption>
+    </figure>
+  </section>
+
+  <section id="storelinks">
+    <a href="">
+      <img src="images/GooglePlay.png" alt="Android Google Play Store">
+    </a>
+
+    <a href="">
+      <img class="padded" src="images/AppStoreBlack.svg" alt="Apple iOS App Store">
+    </a>
+
+    <a href="">
+      <img class="padded" src="images/PCMacLinux.svg" alt="PC/Mac/Linux Web Browser">
+    </a>
+
+    <a href="">
+      <img class="padded" src="images/kongregate_logo_w_ant.svg" alt="Kongregate">
+    </a>
+
+    <a href="">
+      <img class="padded" src="images/itch.png" alt="itch.io">
+    </a>
+  </section>
+
+  <section id="socialshare">
+    <div>
+      <h4>Share this!</h4>
+      <a href="https://twitter.com/intent/tweet?text=GameTitle&amp;url=https://www.game.com&amp;via=sacredseedstdio"
+        target="_blank" title="Twitter">
+        <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+          <title>Twitter</title>
+          <g fill="none" fill-rule="evenodd">
+            <path d="M.106.183h55.127V55.31H.106V.183z" fill="#00ACED"></path>
+            <path d="M37.09 21.016c-.728.352-1.504.58-2.325.685.837-.538 1.48-1.387 1.784-2.404-.784.497-1.65.852-2.575 1.06-.735-.85-1.79-1.38-2.95-1.38-2.234 0-4.045 1.946-4.045 4.354 0 .338.035.673.102.988-3.355-.174-6.34-1.914-8.336-4.544-.346.642-.545 1.388-.545 2.19 0 1.506.714 2.848 1.8 3.617-.663-.026-1.287-.21-1.832-.54v.06c0 2.105 1.395 3.862 3.245 4.27-.34.097-.698.143-1.07.143-.258 0-.505-.018-.755-.078.513 1.737 2.008 2.998 3.777 3.023-1.385 1.174-3.128 1.864-5.023 1.864-.328 0-.65-.02-.966-.06 1.79 1.24 3.912 1.964 6.2 1.964 7.44 0 11.51-6.638 11.51-12.39 0-.186-.004-.372-.013-.558.79-.623 1.476-1.39 2.018-2.262"
+              fill="#FFF"></path>
+          </g>
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.game.com" target="_blank" title="Facebook">
+        <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+          <title>Facebook</title>
+          <g fill="none" fill-rule="evenodd">
+            <path d="M.32.183h55.127V55.31H.32V.183z" fill="#3B5998"></path>
+            <path d="M32.446 24.287h-3.108V22.25c0-.766.507-.945.865-.945h2.192V17.94l-3.02-.01c-3.352 0-4.114 2.508-4.114 4.114v2.243h-1.938v3.467h1.94v9.81h4.076v-9.81h2.75l.358-3.467"
+              fill="#FFF"></path>
+          </g>
+        </svg>
+      </a>
+      <a href="https://plus.google.com/share?url=https://www.game.com" target="_blank" title="Google+">
+        <div class="google">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+            stroke-miterlimit="1.414" fill="white">
+            <g>
+              <path d="M5.09 7.273v1.745H7.98c-.116.75-.873 2.197-2.887 2.197-1.737 0-3.155-1.44-3.155-3.215S3.353 4.785 5.09 4.785c.99 0 1.652.422 2.03.786l1.382-1.33c-.887-.83-2.037-1.33-3.41-1.33C2.275 2.91 0 5.184 0 8s2.276 5.09 5.09 5.09c2.94 0 4.888-2.065 4.888-4.974 0-.334-.036-.59-.08-.843H5.09zM16 7.273h-1.455V5.818H13.09v1.455h-1.454v1.454h1.455v1.455h1.455V8.727H16"></path>
+            </g>
+          </svg>
+        </div>
+      </a>
+      <a href="https://reddit.com/submit/?url=https://www.game.com&amp;title=GameTitle"
+        target="_blank" title="Reddit">
+        <div class="reddit">
+          <svg viewBox="0 0 32 32">
+            <path stroke="none" fill="white" d="M8 20c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2s-2-0.895-2-2zM20 20c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2s-2-0.895-2-2zM20.097 24.274c0.515-0.406 1.262-0.317 1.668 0.198s0.317 1.262-0.198 1.668c-1.434 1.13-3.619 1.86-5.567 1.86s-4.133-0.73-5.567-1.86c-0.515-0.406-0.604-1.153-0.198-1.668s1.153-0.604 1.668-0.198c0.826 0.651 2.46 1.351 4.097 1.351s3.271-0.7 4.097-1.351zM32 16c0-2.209-1.791-4-4-4-1.504 0-2.812 0.83-3.495 2.057-2.056-1.125-4.561-1.851-7.29-2.019l2.387-5.36 4.569 1.319c0.411 1.167 1.522 2.004 2.83 2.004 1.657 0 3-1.343 3-3s-1.343-3-3-3c-1.142 0-2.136 0.639-2.642 1.579l-5.091-1.47c-0.57-0.164-1.173 0.116-1.414 0.658l-3.243 7.282c-2.661 0.187-5.102 0.907-7.114 2.007-0.683-1.227-1.993-2.056-3.496-2.056-2.209 0-4 1.791-4 4 0 1.635 0.981 3.039 2.387 3.659-0.252 0.751-0.387 1.535-0.387 2.341 0 5.523 6.268 10 14 10s14-4.477 14-10c0-0.806-0.134-1.589-0.387-2.34 1.405-0.62 2.387-2.025 2.387-3.66zM27 5.875c0.621 0 1.125 0.504 1.125 1.125s-0.504 1.125-1.125 1.125-1.125-0.504-1.125-1.125 0.504-1.125 1.125-1.125zM2 16c0-1.103 0.897-2 2-2 0.797 0 1.487 0.469 1.808 1.145-1.045 0.793-1.911 1.707-2.552 2.711-0.735-0.296-1.256-1.016-1.256-1.856zM16 29.625c-6.42 0-11.625-3.414-11.625-7.625s5.205-7.625 11.625-7.625c6.42 0 11.625 3.414 11.625 7.625s-5.205 7.625-11.625 7.625zM28.744 17.856c-0.641-1.003-1.507-1.918-2.552-2.711 0.321-0.676 1.011-1.145 1.808-1.145 1.103 0 2 0.897 2 2 0 0.84-0.52 1.56-1.256 1.856z"></path>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>{GameTitle} is indipendently developed and published by
+      <a href="https://www.sacredseedstudio.com">Sacred Seed Studio</a>
+    </p>
+  </footer>
+</body>
+
+</html>
