@@ -1,5 +1,5 @@
 # GameWebsiteTemplate
-A template for a game website
+A template for building a game website
 
 ---
 
